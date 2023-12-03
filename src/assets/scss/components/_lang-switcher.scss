@@ -1,0 +1,63 @@
+.language-switcher {
+  li {
+    position: relative;
+    .sub-menu {
+      position: absolute;
+      top: 100%;
+      left: 0;
+      padding: 12px;
+      border-radius: 15px;
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      transform: translateY(-10px);
+      opacity: 0;
+      transition: all .2s ease;
+      visibility: hidden;
+      background: var(--bg);
+      box-shadow: 2px 4px 11px 0px rgba($black, .04);
+      li {
+        a {
+          padding: 0 10px;
+        }
+      }
+    }
+    &:has(.sub-menu) {
+      height: 100%;
+      display: flex;
+      &:hover {
+        .sub-menu {
+          transform: translateY(0);
+          opacity: 1;
+          visibility: visible;
+
+        }
+      }
+    }
+  }
+
+  &.mob {
+    display: flex;
+    gap: 16px;
+    align-items: center;
+  }
+  a, span {
+    background: transparent;
+    border: none;
+    font-size: 16px;
+    text-transform: uppercase;
+    transition: all .2s ease;
+    &:hover {
+      color: $primary;
+    }
+    cursor: pointer;
+    &:focus {
+      outline: none;
+    }
+  }
+}
+.current-lang {
+  span {
+    gap: 8px;
+  }
+}

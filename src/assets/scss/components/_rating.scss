@@ -1,0 +1,21 @@
+.rating-wrapper {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+  span {
+    color: var(--grey-true-600, #525252);
+
+    /* 14 20 Regular */
+    font-family: Montserrat;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 20px; /* 142.857% */
+  }
+}
+.rating {
+  display: flex;
+  align-content: center;
+  gap: 2px;
+}
+

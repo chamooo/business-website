@@ -1,0 +1,26 @@
+.marquee {
+  animation: scroll 20s linear infinite;
+  display: flex;
+  align-items: center;
+  gap: 64px;
+  img {
+    height: 60px;
+    object-fit: contain;
+  }
+  @media (max-width: $md4 + "px") {
+    animation: scroll 5s linear infinite;
+  }
+}
+
+.marquee:hover {
+  animation-play-state: paused;
+}
+
+@keyframes scroll {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(calc(-100% - 20px));
+  }
+}

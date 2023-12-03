@@ -1,0 +1,51 @@
+.services {
+  // .services__container
+  &__container {
+  }
+
+  // .services__row
+  &__row {
+    display: flex;
+    gap: 24px;
+    @media (max-width: $md2 + "px") {
+      flex-direction: column;
+      align-items: center;
+    }
+  }
+}
+
+.services-card {
+  background: $white;
+  flex: 1;
+  overflow: hidden;
+  border-radius: 0 0 12px 12px;
+  // .services-card__img
+  &__img {
+    border-radius: 12px 12px 0 0;
+    filter: saturate(0) contrast(1.1);
+    max-height: 270px;
+  }
+
+  // .services-card__body
+  &__body {
+    padding: 24px;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    @media (max-width: $md2 + "px") {
+      padding: 16px;
+      gap: 8px;
+    }
+  }
+
+  // .services-card__title
+  &__title {
+  }
+
+  // .services-card__text
+  &__text {
+  }
+}
+
+.media-wrapper {
+}

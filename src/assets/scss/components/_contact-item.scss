@@ -1,0 +1,53 @@
+
+.contact-items {
+  // .contact-items__item
+  &__item {
+  }
+}
+.install-help {
+  &__subtitle {
+    margin-bottom: 64px;
+    @media (max-width: $md2 + "px") {
+      margin-bottom: 48px;
+    }
+  }
+}
+.item-contact-items {
+  display: flex;
+  padding: 24px;
+  flex-direction: column;
+  align-items: flex-start;
+  align-self: stretch;
+  background: $grey-true-800;
+  gap: 64px;
+  @media (max-width: $md2 + "px") {
+    gap: 48px;
+  }
+  // .item-contact-items__icon
+  &__icon {
+    width: 48px;
+    height: 48px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: $grey-true-50;
+    img {
+      width: 24px;
+      height: 24px;
+      object-fit: contain;
+    }
+  }
+
+  // .item-contact-items__content
+  &__content {
+    a {
+      font-weight: 600 !important;
+      color: $white !important;
+      font-size: 16px;
+      &:hover {
+        opacity: .7;
+      }
+    }
+  }
+}

@@ -1,0 +1,88 @@
+.about {
+  &__container {
+    position: relative;
+  }
+}
+.row-about {
+  display: flex;
+  align-items: center;
+  gap: 64px;
+  .img-badge {
+    bottom: 32px;
+    left: -50px;
+    @media (max-width: $md2 + "px") {
+      left: 50%;
+      right: 50%;
+      transform: translateX(-50%);
+      width: 100%;
+      max-width: 187px;
+      padding: 19px;
+      bottom: 17px;
+    }
+  }
+  @media (max-width: $md2 + "px") {
+    gap: 32px;
+  }
+  @media (max-width: $md3 + "px") {
+    flex-direction: column-reverse;
+  }
+  & > div {
+    flex: 1;
+  }
+  &__img {
+    border-radius: 16px;
+    height: 100%;
+    width: 100%;
+    max-height: 600px;
+    max-width: 500px;
+
+    @media (max-width: $md3 + "px") {
+      max-width: 100%;
+      max-height: 100%;
+    }
+
+    img {
+      object-position: center -50px;
+      filter: saturate(0);
+      position: relative;
+      z-index: -1;
+      @media (max-width: $md3 + "px") {
+        object-position: center;
+      }
+    }
+  }
+  &__content {
+    max-width: 600px;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    .stats {
+      display: flex;
+      gap: 12px;
+      max-width: 350px;
+      align-items: center;
+    }
+
+    @media (max-width: $md3 + "px") {
+      .btn {
+        width: 100%;
+      }
+    }
+  }
+}
+.img-badge {
+  padding: 24px;
+  background: rgba($primary, 1);
+  //backdrop-filter: blur(8px);
+  z-index: 2;
+  position: absolute;
+  width: fit-content;
+  height: fit-content;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  //border-radius: 12px;
+  color: $white;
+}

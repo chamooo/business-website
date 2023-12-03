@@ -1,0 +1,83 @@
+// file input ----------------------------------------
+
+.dropzone {
+  background-color: transparent;
+  width: 100%;
+  border-radius: 12px;
+  border: 2px dashed var(--borders);
+  padding: 50px;
+  text-align: center;
+  transition: all .2s ease;
+  &:has(.invalid) {
+    border: 2px dashed $deep-red-500;
+  }
+  p {
+    line-height: 32px;
+  }
+  input[type="file"] {
+    display: none;
+  }
+  label {
+    &.accent {
+      font-weight: 600;
+      cursor: pointer;
+    }
+  }
+  .upload-btn {
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: $white;
+    border-radius: 8px;
+    border: 1px solid var(--grey-200, #EAECF0);
+    margin: 0 auto 12px;
+    cursor: pointer;
+    transition: all .2s ease;
+    &:hover {
+      background: $primary;
+      border: 1px solid $primary;
+      i {
+        color: $white;
+      }
+    }
+    &:active {
+      background: $primary-active;
+    }
+    i {
+      transition: all .2s ease;
+      font-size: 20px;
+      color: $grey-neutral-500;
+    }
+  }
+  #image-display {
+    position: relative;
+    width: 90%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-evenly;
+    gap: 1.25em;
+    flex-wrap: wrap;
+  }
+  #image-display img {
+    width: 100%;
+  }
+  #image-display figcaption {
+    font-size: 0.8em;
+    text-align: center;
+    color: #5a5861;
+  }
+  &.active {
+    border: 2px dashed $primary !important;
+  }
+  .success-message {
+      color: $primary;
+  }
+  #error {
+    text-align: center;
+    color: $deep-red-500;
+    font-size: 12px;
+    margin-top: 12px;
+  }
+}

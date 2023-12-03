@@ -1,0 +1,36 @@
+.error {
+ &__body {
+   display: flex;
+   align-items: center;
+   gap: 50px;
+   justify-content: space-between;
+   height: 100%;
+
+   @media (max-width: $md3 + "px") {
+     margin-top: 50px;
+     justify-content: center;
+     text-align: center;
+   }
+ }
+  &__content {
+    max-width: 390px;
+    @media (max-width: $md3 + "px") {
+      max-width: 100%;
+      text-align: center;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      height: 100%;
+    }
+  }
+  svg {
+    object-fit: contain;
+    @media (max-width: $md3 + "px") {
+        display: none;
+    }
+    path {
+      transition: all .2s ease;
+      fill: var(--header);
+    }
+  }
+}

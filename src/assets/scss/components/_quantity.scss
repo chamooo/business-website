@@ -1,0 +1,33 @@
+.quantity-container {
+  display: flex;
+  align-items: center;
+  flex-wrap: nowrap;
+
+  .text-md {
+    padding-left: 16px;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px; /* 150% */
+    color: $grey-true-300;
+    display: block;
+    max-width: 300px;
+  }
+}
+
+.product-quantity-input {
+  min-width: 48px;
+  min-height: 40px;
+  max-width: 48px;
+  max-height: 40px;
+  text-align: center;
+  /* Chrome, Safari, Edge, Opera */
+  &::-webkit-outer-spin-button,
+  &::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+  }
+
+  /* Firefox */
+  -moz-appearance: textfield;
+}

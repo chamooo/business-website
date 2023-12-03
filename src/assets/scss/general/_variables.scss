@@ -1,0 +1,31 @@
+// Responsive grid
+$md1: 1199.98;
+$md2: 990.98;
+$md3: 768.98;
+$md4: 479.98;
+
+$font: Poppins;
+$font-size: 18px;
+
+// Sections
+$section-indent-lg: 124px;
+$section-indent-sm: 90px;
+
+$section-padding-lg: 96px;
+$section-padding-sm: 64px;
+
+$header-height-lg: 92px;
+$header-height-sm: 120px;
+
+// Colors
+$white: #FAFBFF;
+$black: #000;
+$bg: #f3f3f6;
+$text: #03040c;
+
+$primary: #1860dd;
+$primary-hover: #1951e0;
+$primary-active: #0c3aaf;
+
+$primary-gradient: linear-gradient(90deg, #1B50D9 0.01%, #386AEC 99.99%);
+$border: 1px solid $grey-true-200;

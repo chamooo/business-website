@@ -1,0 +1,68 @@
+.cards-wrapper {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  gap: 24px;
+  @media (max-width: $md2 + "px") {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 16px;
+  }
+}
+
+.card-item {
+  background: rgba($bg, .9);
+  backdrop-filter: blur(8px);
+  padding: 32px;
+  max-width: 33%;
+  width: 100%;
+  overflow: hidden;
+  border-radius: 16px;
+  border: $border;
+
+  //box-shadow: rgba(0, 0, 0, 0.03) 0px 20px 25px -5px, rgba(0, 0, 0, 0.02) 0px 10px 10px -5px;
+  box-shadow: 7px 7px 30px 0px rgba(200, 215, 228, 0.35);
+  transition: all .3s ease;
+  &__icon {
+    margin-bottom: 16px;
+  }
+  &__content {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+  }
+
+  @media (max-width: $md2 + "px") {
+    padding: 24px;
+    max-width: 300px;
+  }
+  @media (max-width: $md4 + "px") {
+    max-width: 100%;
+  }
+  @media (min-width: $md2 + "px") {
+    //&:hover {
+    //  box-shadow: 7px 15px 40px -5px rgba(223, 223, 223, 1);
+    //  transform: translateY(-10px);
+    //}
+  }
+}
+.circle-icon {
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  background: $primary;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  @media (max-width: $md2 + "px") {
+    width: 45px;
+    height: 45px;
+  }
+  i {
+    color: $white;
+    font-size: 24px;
+    @media (max-width: $md2 + "px") {
+      font-size: 20px;
+    }
+  }
+}

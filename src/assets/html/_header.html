@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="uk" class="dark-theme">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Busimax</title>
+    <meta property="og:title"              content="Busimax" />
+    <meta property="og:description"        content="Business Planning Advisors & Specialists" />
+    <meta property="og:image"              content="./assets/images/hero.webp" />
+    <meta property="og:image:width" content="630" />
+    <meta property="og:image:height" content="390" />
+    <meta name="description" content="Business Planning Advisors & Specialists">
+
+    <link rel="icon" type="image/svg" href="./assets/images/svg/favicon.svg">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/5d143852f3.js" crossorigin="anonymous"></script>
+
+    <!-- swiper -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"/>
+    <script defer src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+
+    <!--intlTelInput-->
+    <script defer src="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/18.1.6/js/intlTelInput.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/18.1.6/css/intlTelInput.css" />
+
+    <!--JQ-->
+    <script defer src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+
+    <!--css-->
+    <link rel="stylesheet" href="./assets/css/style.min.css">
+
+    <!--js-->
+    <script defer src="./assets/js/main.min.js"></script>
+
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script defer src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+</head>
+
+<body>
+<div class="wrapper">
+    <div class="alert"></div>
+    <!-- /.alert -->
+    <div id="top"></div>
+    <!-- Header -->
+    <header class="header">
+        <div class="header__container">
+            <nav class="header__menu">
+                <a href="/" class="logo">
+                    <span>LOGO</span>
+                    <!--<img src="./assets/images/svg/logo.svg" alt="Logo">-->
+                </a>
+                <ul class="nav-links hide-for-mob">
+                    <li><a href="#about" class="link">About</a></li>
+                    <li><a href="#benefits" class="link">Benefits</a></li>
+                    <li><a href="#services" class="link">Our services</a></li>
+                    <li><a href="#contact" class="link">Contact</a></li>
+                </ul>
+                <div class="header__actions">
+                    @@include('components/_call-action.html')
+                    <div class="hamburger-container hamburger-js open-menu-btn show-for-mob-flex">
+                        <div class="hamburger">
+                            <div class="line1"></div>
+                            <div class="line2"></div>
+                            <div class="line3"></div>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+            <!-- Mobile nav -->
+            <nav class="header__mobile-menu show-for-mob-flex">
+                <ul class="mobile-menu__list nav-links">
+                    <li><a href="#about" class="link active">About</a></li>
+                    <li><a href="#benefits" class="link">Benefits</a></li>
+                    <li><a href="#services" class="link">Our services</a></li>
+                    <li><a href="#contact" class="link">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+

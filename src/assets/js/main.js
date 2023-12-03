@@ -1,0 +1,8 @@
+@@include('form.js')
+@@include('modal.js')
+@@include('scripts.js')
+@@include('header.js')
+@@include('sliders.js')
+@@include('components/accordion.js')
+@@include('animations.js')
+@@include('header-steps.js')

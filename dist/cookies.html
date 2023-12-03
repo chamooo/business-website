@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="uk" class="dark-theme">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Busimax</title>
+    <meta property="og:title"              content="Busimax" />
+    <meta property="og:description"        content="Business Planning Advisors & Specialists" />
+    <meta property="og:image"              content="./assets/images/hero.webp" />
+    <meta property="og:image:width" content="630" />
+    <meta property="og:image:height" content="390" />
+    <meta name="description" content="Business Planning Advisors & Specialists">
+
+    <link rel="icon" type="image/svg" href="./assets/images/svg/favicon.svg">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/5d143852f3.js" crossorigin="anonymous"></script>
+
+    <!-- swiper -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"/>
+    <script defer src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+
+    <!--intlTelInput-->
+    <script defer src="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/18.1.6/js/intlTelInput.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/18.1.6/css/intlTelInput.css" />
+
+    <!--JQ-->
+    <script defer src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+
+    <!--css-->
+    <link rel="stylesheet" href="./assets/css/style.min.css">
+
+    <!--js-->
+    <script defer src="./assets/js/main.min.js"></script>
+
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script defer src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+</head>
+
+<body>
+<div class="wrapper">
+    <div class="alert"></div>
+    <!-- /.alert -->
+    <div id="top"></div>
+    <!-- Header -->
+    <header class="header">
+        <div class="header__container">
+            <nav class="header__menu">
+                <a href="/" class="logo">
+                    <span>LOGO</span>
+                    <!--<img src="./assets/images/svg/logo.svg" alt="Logo">-->
+                </a>
+                <ul class="nav-links hide-for-mob">
+                    <li><a href="#about" class="link">About</a></li>
+                    <li><a href="#benefits" class="link">Benefits</a></li>
+                    <li><a href="#services" class="link">Our services</a></li>
+                    <li><a href="#contact" class="link">Contact</a></li>
+                </ul>
+                <div class="header__actions">
+                    <a href="tel:+888888888888" class="call-block hide-for-mob">
+    <div class="primary-bg icon-wrapper">
+        <svg xmlns="http://www.w3.org/2000/svg" width="17" height="17" viewBox="0 0 17 17" fill="none">
+            <path d="M0.999991 6.86C2.91984 11.0408 6.33117 14.3544 10.566 16.152L11.246 16.455C11.999 16.7903 12.8462 16.8491 13.6384 16.621C14.4305 16.3929 15.1167 15.8925 15.576 15.208L16.465 13.884C16.6041 13.6764 16.6604 13.4242 16.6229 13.1771C16.5853 12.93 16.4565 12.7059 16.262 12.549L13.25 10.119C13.1451 10.0344 13.0242 9.97193 12.8945 9.93526C12.7649 9.89858 12.6292 9.88849 12.4955 9.90558C12.3618 9.92267 12.233 9.9666 12.1168 10.0347C12.0005 10.1028 11.8992 10.1938 11.819 10.302L10.887 11.559C8.4946 10.3774 6.55812 8.44061 5.37699 6.048L6.63299 5.116C6.74124 5.03576 6.83215 4.93447 6.90027 4.81822C6.9684 4.70197 7.01232 4.57315 7.02941 4.43949C7.0465 4.30584 7.03641 4.17011 6.99974 4.04046C6.96306 3.9108 6.90056 3.7899 6.81599 3.685L4.38599 0.673C4.22909 0.478454 4.00502 0.349714 3.75793 0.312141C3.51084 0.274568 3.25863 0.330886 3.05099 0.47L1.71799 1.364C1.02939 1.82578 0.527081 2.51701 0.300543 3.31457C0.074005 4.11212 0.137952 4.96419 0.480991 5.719L0.999991 6.86Z" fill="#F3F6FF"/>
+        </svg>
+    </div>
+    <div class="call-block-content">
+        <span class="accent text-sm">Need Help? Talk To An Expert</span>
+        <span class="link medium">+88 888 888 8888</span>
+    </div>
+</a>
+                    <div class="hamburger-container hamburger-js open-menu-btn show-for-mob-flex">
+                        <div class="hamburger">
+                            <div class="line1"></div>
+                            <div class="line2"></div>
+                            <div class="line3"></div>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+            <!-- Mobile nav -->
+            <nav class="header__mobile-menu show-for-mob-flex">
+                <ul class="mobile-menu__list nav-links">
+                    <li><a href="#about" class="link active">About</a></li>
+                    <li><a href="#benefits" class="link">Benefits</a></li>
+                    <li><a href="#services" class="link">Our services</a></li>
+                    <li><a href="#contact" class="link">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+
+<main class="page">
+    <div class="info__container">
+        <section class="post-content" style="padding: 50px 0;">
+                <h1 class="h2">Cookies Policy</h1>
+                <p>This Cookies Policy explains what cookies are, how we use them, and your choices regarding cookies. Please read this policy to understand what types of cookies we use, the information we collect using cookies, and how that information is used.</p>
+
+                <h2 class="h4">What Are Cookies</h2>
+                <p>Cookies are small pieces of text sent by your web browser by a website you visit. A cookie file is stored in your web browser and allows the service or a third-party to recognize you and make your next visit easier and more useful to you.</p>
+
+                <h2 class="h4">How We Use Cookies</h2>
+                <p>When you use and access our website, we may place a number of cookies files in your web browser. We use cookies for the following purposes:</p>
+                <ul>
+                    <li>To enable certain functions of the website.</li>
+                    <li>To provide analytics.</li>
+                    <li>To store your preferences.</li>
+                    <li>To enable advertisements delivery, including behavioral advertising.</li>
+                </ul>
+
+                <h2 class="h4">Disabling Cookies</h2>
+                <p>You can instruct your browser to refuse all cookies or to indicate when a cookie is being sent. However, if you do not accept cookies, you may not be able to use some portions of our website.</p>
+                <p>For more information on how to control cookies, check your browser or device’s settings. You can also visit <a href="https://www.internetcookies.com" target="_blank" rel="noopener noreferrer">www.internetcookies.com</a> for more information on how to manage cookies on various browsers.</p>
+
+                <h2 class="h4">Changes to This Policy</h2>
+                <p>We may update our Cookies Policy from time to time. We will notify you of any changes by posting the new policy on this page.</p>
+        </section>
+    </div>
+</main>
+
+<footer class="footer">
+        <!-- /.footer__logo -->
+    <div class="footer__container">
+        <div class="footer__left">
+            <a href="/" class="footer__logo d-xs mb-24 accent">
+                <!--<img src="/assets/images/svg/logo-portr.webp" alt="Logo">-->
+                LOGO
+            </a>
+            <p class="grey mt-24">Your Gateway <br> to Financial Prosperity</p>
+        </div>
+        <div class="footer__body body-footer">
+            <nav class="body-footer__nav nav-body-footer">
+                <ul class="nav-body-footer__list">
+                    <li class="footer-title">Menu</li>
+                    <li><a href="#about" class="link">About</a></li>
+                    <li><a href="#benefits" class="link">Benefits</a></li>
+                    <li><a href="#services" class="link">Our services</a></li>
+                    <li><a href="#contact" class="link">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+        <div class="footer__body body-footer">
+            <nav class="body-footer__nav nav-body-footer">
+                <ul class="nav-body-footer__list">
+                    <li class="footer-title">Info</li>
+                    <li><a href="/privacy-policy.html" target="_blank" class="link">Privacy policy</a></li>
+                    <li><a href="/cookies.html" target="_blank" class="link">Cookies</a></li>
+                </ul>
+            </nav>
+        </div>
+        <div class="flex flex-col gap-24">
+            <a href="tel:+888888888888" class="call-block hide-for-mob">
+    <div class="primary-bg icon-wrapper">
+        <svg xmlns="http://www.w3.org/2000/svg" width="17" height="17" viewBox="0 0 17 17" fill="none">
+            <path d="M0.999991 6.86C2.91984 11.0408 6.33117 14.3544 10.566 16.152L11.246 16.455C11.999 16.7903 12.8462 16.8491 13.6384 16.621C14.4305 16.3929 15.1167 15.8925 15.576 15.208L16.465 13.884C16.6041 13.6764 16.6604 13.4242 16.6229 13.1771C16.5853 12.93 16.4565 12.7059 16.262 12.549L13.25 10.119C13.1451 10.0344 13.0242 9.97193 12.8945 9.93526C12.7649 9.89858 12.6292 9.88849 12.4955 9.90558C12.3618 9.92267 12.233 9.9666 12.1168 10.0347C12.0005 10.1028 11.8992 10.1938 11.819 10.302L10.887 11.559C8.4946 10.3774 6.55812 8.44061 5.37699 6.048L6.63299 5.116C6.74124 5.03576 6.83215 4.93447 6.90027 4.81822C6.9684 4.70197 7.01232 4.57315 7.02941 4.43949C7.0465 4.30584 7.03641 4.17011 6.99974 4.04046C6.96306 3.9108 6.90056 3.7899 6.81599 3.685L4.38599 0.673C4.22909 0.478454 4.00502 0.349714 3.75793 0.312141C3.51084 0.274568 3.25863 0.330886 3.05099 0.47L1.71799 1.364C1.02939 1.82578 0.527081 2.51701 0.300543 3.31457C0.074005 4.11212 0.137952 4.96419 0.480991 5.719L0.999991 6.86Z" fill="#F3F6FF"/>
+        </svg>
+    </div>
+    <div class="call-block-content">
+        <span class="accent text-sm">Need Help? Talk To An Expert</span>
+        <span class="link medium">+88 888 888 8888</span>
+    </div>
+</a>
+            <a href="#contact" class="btn secondary">Contact us</a>
+        </div>
+    </div>
+    <div class="footer__bottom">
+        <div class="__container">
+            <span class="text-sm grey">© 2023 Name. All Right Reserved.</span>
+            <a href="https://linkedin.com/in/roman-melnychuk-478563268" target="_blank" class="text-sm grey">Developed by <span class="medium">Roman Melnychuk</span></a>
+        </div>
+    </div>
+    <!-- /.footer__bottom -->
+</footer>
+<script>
+   window.addEventListener('DOMContentLoaded', e => {
+       AOS.init({
+           once: true,
+           duration: 900,
+       });
+   });
+</script>
+</div>
+</body>
+</html>

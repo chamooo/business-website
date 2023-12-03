@@ -1,0 +1,28 @@
+.has-tooltip {
+  position: relative;
+  transform-style: preserve-3d;
+  cursor: default;
+  transition: all 0.2s ease;
+  &:hover {
+    .tooltip {
+      opacity: 1;
+      transform: translateY(0) rotateY(20deg);
+    }
+  }
+  .tooltip {
+    transform-style: preserve-3d;
+    border: 0.6px solid $grey-true-800;
+    padding: 0 8px;
+    background: $bg;
+    position: absolute;
+    bottom: 125%;
+    border-radius: 5px;
+    right: 0;
+    opacity: 0;
+    transform: translateY(5px);
+    transition: all 0.2s ease;
+    .tooltip-text {
+      font-size: 12px;
+    }
+  }
+}
